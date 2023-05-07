@@ -36,10 +36,21 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     font-family:  "Plus Jakarta Sans", sans-serif;
     margin: 0;
     overflow-x: hidden;
+}
+
+.site-main {
+    flex-grow: 1;
 }
 
 .container {
@@ -102,7 +113,6 @@ body {
 }
 
 .nav__link {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: 500;
     line-height: 150%;
     color: #101010;
@@ -119,7 +129,6 @@ body {
 }
 
 .site-header__link-number {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 120%;
@@ -162,7 +171,6 @@ body {
 }
 
 .hero__title {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-size: 56px;
     line-height: 140%;
     font-weight: 700;
@@ -172,7 +180,6 @@ body {
 }
 
 .hero__text {
-    font-family: 'Plus Jakarta Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -184,7 +191,6 @@ body {
 
 .hero__link {
     display: inline-block;
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     line-height: 120%;
     font-weight: 700;
     text-align: center;
@@ -224,7 +230,6 @@ body {
 }
 
 .services__heading {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 140%;
@@ -272,7 +277,6 @@ body {
 
 
 .services__title {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 140%;
@@ -283,7 +287,6 @@ body {
 
 
 .services__text {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 150%;
     color: #636f87;
@@ -293,7 +296,6 @@ body {
 
 .services__link {
     display: inline-block;
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
@@ -316,7 +318,6 @@ body {
 } 
 
 .about__heading {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 140%;
@@ -327,7 +328,6 @@ body {
 }
 
 .about__main-text {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 150%;
     text-align: center;
@@ -371,7 +371,6 @@ body {
 }
 
 .about__title {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 140%;
@@ -406,7 +405,6 @@ body {
 .site-article__title {
     margin-top: 0;
     margin-bottom: 16px;
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-size: 36px;
     line-height: 140%;
     font-weight: 700;
@@ -417,7 +415,6 @@ body {
 .site-article__text {
     margin-top: 0;
     margin-bottom: 60px;
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 150%;
     text-align: center;
@@ -439,7 +436,6 @@ body {
 
 .form__label {
     padding-bottom: 21px;
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     font-size: 20px;
     line-height: 25px;
     font-weight: 700;
@@ -462,17 +458,25 @@ body {
     margin-right: auto;
     margin-left: auto;
     padding: 20px 60px;
-    font-family: "Plus Jakarta Sans" ,"Arial", sans-serif;
     line-height: 120%;
     font-weight: 700;
     text-align: center;
     color: #fff;
     background-color: #1aab7b;
     border-radius: 6px;
+    transition: background-color 0.5s ease;
+}
+
+.form__button:hover {
+    background-color: #fff;
+    color: #1aab7b;
+}
+
+.form__button:active {
+    opacity: 0.8;
 }
 
 .form__important {
-    font-family: "Plus Jakarta Sans" ,"Arial", sans-serif;
     line-height: 150%;
     text-align: center;
     color: #858ea2; 
@@ -480,120 +484,77 @@ body {
 
      /*     Footer    */
 
-.footer-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 200px;
-    margin-bottom: 100px;
+.site-footer {
+    padding: 100px 112px;
     background-color: #101010;
+}     
+
+.footer__wrapper {
+    display: flex;
 }
 
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
-.first-footer-wrapper {
-    margin-left: 112px;
+.footer__list--initial {
     margin-right: 151px;
-    margin-top: 100px;
 }
 
-.first-footer-wrapper>h3 {
-        font-family: "Plus Jakarta Sans", "Arial", sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
-        color: #fff;
+.footer__list--middle {
+    margin-right: 470px;
 }
 
-.footer-link {
+.footer__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__link {
+    margin-bottom: 26px;
     display: inline-block;
-    font-family: "Plus Jakarta Sans", "Arial",sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    text-decoration: none;
-    color: #a1abb7;
-    margin-bottom: 26px;
-}
-
-
-
-.Smm:hover {
-    color: #1aab7b;
-}
-
-.Smm:active {
-    color: #1aab7b;
-}
-
-.fmm:hover {
-    color: #1aab7b;
-}
-
-.all:hover {
-    color: #1aab7b;
-}
-
-.all:active {
-    color: #1aab7b;
-}
-
-.connecter {
-    margin-right: 521px;
-    align-items: flex-start;
-   
-}
-
-.connecter>h3 {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 700;
-    color: #fff;
-
-}
-
-
-.last-wrapper {
-    margin-top: 40px;
-    margin-right: 235px;
-    
-}
-
-.last-wrapper>h3 {
-    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.last-items {
-    display: block;
-    font-family: "Plus Jakarta Sans", "Arial",sans-serif;
-    font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
     text-decoration: none;
     color: #a1abb7;
-    margin-bottom: 26px;
+    transition: color 0.5s ease;
 }
 
-.twitter {
+.footer__link:nth-child(2) {
+    width: 161px;
+}
+
+.footer__link--location {
+    width: 280px;
+    font-style: normal;
+}
+
+.footer__link:hover {
+    color: #1aab7b;
+}
+
+.footer__link:active {
+    opacity: 0.8;
+}
+
+.footer__socials-link:first-child {
     margin-right: 46px;
 }
 
-.facebook {
+.footer__socials-link:nth-child(2) {
     margin-right: 46px;
 }
 
-.linkedin {
+.footer__socials-link:nth-child(3) {
     margin-right: 40px;
 }
 

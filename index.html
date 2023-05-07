@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam</title>
+    <title>Pixer</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
             <div class="site-header__wrapper">
                 <div class="site-header__inner">
                 <a class="logo-link" href="./index.html"> 
-                    <img class="loogo-image" src="./images/logo.img.png"  alt="logo-img" width="81" height="21">
+                    <img class="loogo-image" src="./images/logo.img.png" alt="logo-img" width="81" height="21">
                 </a>
                 <nav class="site-header__navigation nav">
                     <ul class="nav__list">
@@ -45,12 +45,11 @@
                 </nav>
             </div>
             <a class="site-header__link-number" href="tel:2395550108">
-                    (239) 555-0108
+                (239) 555-0108
             </a>
          </div>
         </div>
     </header>
-
 
 <main>
     <section class="hero">
@@ -63,7 +62,7 @@
                      Learn more
                     </a>
                 </div>
-                <img class="hero__img" src="./images/youtube (1).png" alt="city-img" width="592" height="334">
+                <img class="hero__img" src="./images/city-layout.png" alt="city-img" width="592" height="334">
             </div>
         </div>
     </section>
@@ -73,8 +72,8 @@
             <div class="services__wrapper">
                 <h2 class="services__heading">How can we help you?</h2>
                 <ul class="services__list">
-                    <li class="services__items">
-                        <h3 class="services__title">
+                    <li class="services__items services__items--initial">
+                        <h3 class="services__title services__title--initial">
                             Web Designer
                         </h3>
                         <p class="services__text">
@@ -84,7 +83,7 @@
                             View more
                         </a>
                     </li>
-                    <li class="services__items">
+                    <li class="services__items services__items--second">
                         <h3 class="services__title">
                             SMM
                         </h3>
@@ -95,16 +94,16 @@
                             View more
                         </a>
                     </li>
-                    <li class="services__items">
+                    <li class="services__items services__items--third">
                         <h3 class="services__title">Branding</h3>
                         <p class="services__text">
-                            No the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                            No the other hand, indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
                         </p>
                         <a class="services__link" href="#">
                             View more
                         </a>
                     </li>
-                    <li class="services__items">
+                    <li class="services__items services__items--fourth">
                         <h3 class="services__title">
                             Developer
                         </h3>
@@ -115,12 +114,12 @@
                             View more
                         </a>
                     </li>
-                    <li class="services__items">
+                    <li class="services__items services__items--last">
                         <h3 class="services__title">
                             Graphic Designer
                         </h3>
                         <p class="services__text">
-                            But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted
+                            But in certain circumstances and obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted
                         </p>
                         <a class="services__link" href="#">
                             View more
@@ -210,73 +209,94 @@
             </form>
         </div>
     </article>
+</main>
 
-    <footer class="sitefooter">
-            <div class="footer-wrapper">
-                <div class="first-footer-wrapper">
-                    <h3 class="footer-link" href="#">
-                        Services
-                    </h3>
-                    
-                    <a class="footer-link Smm" href="#">
-                        SMM
-                    </a>
-            
-                    <a class="footer-link fmm" href="#">
-                        Web development
-                    </a>
-                    
-                    <a class="footer-link" href="#">
-                        Mobile apps
-                    </a>
-            
-                    <a class="footer-link" href="#">
-                        Branding
-                    </a>
-        
-                    <a class="footer-link helper" href="#">
-                        Graphic design
-                    </a>
-                    </div>
-
-                   <div class="connecter">
-                   <h3 class="footer-link" href="#">
-                      Resources
-                   </h3>
-                   <a class="footer-link all" href="#">
-                      About us
-                   </a>
-                   <a class="footer-link" href="#">
-                     Showcase
-                   </a>
-                   <a class="footer-link" href="#">
-                      Blog
-                   </a>
-                   </div> 
-
-                <div class="last-wrapper">
-                    <h3 class="last-items" href="#">
+    <footer class="site-footer footer">
+            <div class="footer__wrapper">
+                    <ul class="footer__list footer__list--initial">
+                        <h3 class="footer__title" href="#">
+                            Services
+                        </h3>
+                        <li class="footer__items">
+                            <a class="footer__link" href="#">
+                                SMM
+                            </a>
+                        </li>
+                        <li class="footer__items">
+                            <a class="footer__link" href="#">
+                                Webdevelopment
+                            </a>
+                        </li>
+                        <li class="footer__items">
+                            <a class="footer__link" href="#">
+                                Mobile apps
+                            </a>
+                        </li>
+                        <li class="footer__items">
+                            <a class="footer__link" href="#">
+                                Branding
+                            </a>
+                        </li>
+                        <li class="footer__items">
+                            <a class="footer__link" href="#">
+                                Graphic design
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer__list--middle">
+                           <h3 class="footer__title" href="#">
+                                Resources
+                           </h3>
+                       <li class="footer__items">
+                           <a class="footer__link all" href="#">
+                              About us
+                           </a>
+                       </li>
+                       <li class="footer__items">
+                           <a class="footer__link" href="#">
+                             Showcase
+                           </a>
+                       </li>
+                       <li class="footer__items">
+                           <a class="footer__link" href="#">
+                              Blog
+                           </a>
+                       </li>
+                    </ul>
+                <ul class="footer__list footer__list--last">
+                    <h3 class="footer__title" href="#">
                        Connect with us
                     </h3>
-                    <a class="last-items"  tel="2395550108">
-                        (239) 555-0108
-                    </a>
-                    <a class="last-items" email="hello@pixer.com">
-                        hello@pixer.com
-                    </a>
-                    <address class="last-items" >
-                        4140 Parker Rd. Allentown, New Mexico 31134
-                    </address>>
-                    <div class="logoes">
-                        <img class="twitter" src="./images/twitter.png" alt="twitter">
-                        <img class="facebook" src="./images/facebook-logo.png" alt="facebook-logo">
-                        <img class="linkedin" src="./images/linkedin.png" alt="linkedin-logo">
-                        <img class="instagramm" src="./images/instagram.png" alt="instagramm-logo">
+                    <li class="footer__items">
+                        <a class="footer__link" href="tel:2395550108">
+                            (239) 555-0108
+                        </a>
+                    </li>
+                    <li class="footer__items">
+                        <a class="footer__link" href="email:hello@pixer.com">
+                            hello@pixer.com
+                        </a>
+                    </li>
+                    <li class="footer__items">
+                        <address class="footer__link footer__link--location">
+                            4140 Parker Rd. Allentown, New Mexico 31134
+                        </address>
+                    </li>
+                    <div class="footer__socials">
+                        <a class="footer__socials-link" href="#">
+                            <img src="./images/twitter.svg" alt="twitter" width="24" height="24">
+                        </a>
+                        <a class="footer__socials-link" href="#">
+                            <img src="./images/facebook.svg" alt="facebook-logo" width="24" height="24">
+                        </a>
+                        <a class="footer__socials-link" href="#">
+                            <img src="./images/linkedin.svg" alt="linkedin-logo" width="24" height="24">
+                        </a>
+                        <a class="footer__socials-link" href="#">
+                            <img src="./images/instagraam.svg" alt="instagramm-logo" width="24" height="24">
+                        </a>
                     </div> 
-                </div>
-            </main>
+                </ul>
     </footer>
-    
-    
 </body>
 </html>
