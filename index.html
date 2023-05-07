@@ -178,28 +178,38 @@
         </div>
     </section>
 
-    <section class="mixed">
+    <article class="site-article">
         <div class="container">
-            <div class="warning">
-                <h3>Leave your number and we'll call you back</h3>
-                <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+            <div class="site-article__textbox">
+                <h3 class="site-article__title">
+                    Leave your number and we'll call you back
+                </h3>
+                <p class="site-article__text">
+                    Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
+                </p>
             </div>
-            <div class="information-wrapper">
-            <form class="information" method="POST" action="https://htmlacademy.ru/">
-                <label for="firstname">Name</label>
-                <input type="text" id="firstname" name="fisrstname" aria-label="Enter the name" required>
-                <label for="number">Phone number</label> 
-                <input type="tel" id="number" name="number" aria-label="enter the number" required>
-                <p>Description</p>
-                <input  type="text" name="text" aria-label="description" required>
-                <div class="button-wrapper">
-                <button  type="submit">Send</button>
-                </div>
-                <span class="paragraph">We call back in 10-30 minutes, guaranteed!</span>
+            <form class="site-article__form form" method="post" action="https://htmlacademy.ru/">
+                <label class="form__label" for="firstname">
+                    Name
+                </label>
+                <input class="form__input" type="text" id="firstname" name="fisrstname" aria-label="Enter the name" required>
+                <label class="form__label" for="number">
+                    Phone number
+                </label> 
+                <input class="form__input" type="tel" id="number" name="number" aria-label="enter the number" required>
+                <label class="form__label" for="description">
+                    Description
+                </label>
+                <input class="form__input" type="text" id="description" name="text" aria-label="description" required>
+                <button class="form__button" type="submit">
+                    Send
+                </button> 
+                <span class="form__important">
+                    We call back in 10-30 minutes, guaranteed!
+                </span>
             </form>
-            </div>
         </div>
-    </section>
+    </article>
 
     <footer class="sitefooter">
             <div class="footer-wrapper">
